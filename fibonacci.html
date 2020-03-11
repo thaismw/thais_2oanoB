@@ -1,0 +1,33 @@
+ <!DOCTYPE html>
+ 	<html>
+ 		<head>
+ 			<title>Fibonacci</title>
+ 			<script>
+ 				function fibonacci() 
+ 				{
+ 					var n= document.getElementById("numero").value;
+ 					
+ 					
+ 					
+ 						x=y=1;
+ 						for(i=3;i<=n;i=i+1)
+ 						{
+ 							z=y+x;
+ 							x=y;
+ 							y=z;
+ 						}
+ 						if(n==1||n==2)
+ 						var z=1;
+ 						resposta="O valor de Fibonacci para "+n+" é "+z;
+ 						document.getElementById("result").innerHTML=resposta;
+ 					
+ 				}
+ 				
+ 			</script>
+ 		</head>
+		<body>
+ 			<h1 id="result"></h1>
+ 			<input type="nember" id="numero"/>
+ 			<button onclick="javascript:fibonacci()">EXECUTAR</button>
+ 		</body>
+ 	 </html>

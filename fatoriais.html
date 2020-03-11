@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+   <title>Fatoriais</title>
+   <meta charset="utf-8">
+	<script>
+    
+    function fatoriais () 
+    {
+     	var x= document.getElementById("numero").value;
+     	var ai= Math.floor(x);
+      	for (i=x-1; i>=1; i--)
+      	{
+       		ai=ai*i;
+      	}
+      var resposta="Fatorial de " + x + " é " + ai;
+	  document.getElementById("result").innerHTML=resposta;
+	}
+     </script>
+	</head>
+   <body>
+   <h1 id="result"></h1>
+   <input type="number" id="numero"/>
+   <button onclick="javascript:fatoriais()">Executar</button>
+  </body>
+</html>
